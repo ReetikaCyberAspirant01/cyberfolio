@@ -1,177 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Reetika Devi | Cybersecurity Portfolio</title>
+<section class="h-screen flex items-center justify-center px-10 bg-black relative overflow-hidden">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- BACKGROUND GLOW -->
+  <div class="absolute w-[500px] h-[500px] bg-red-500 opacity-20 blur-[150px] rounded-full top-[-100px] left-[-100px]"></div>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <div class="grid md:grid-cols-2 gap-12 items-center z-10">
 
-  <style>
-    body {
-      font-family: 'Orbitron', sans-serif;
-    }
+    <!-- LEFT SIDE PROFILE -->
+    <div class="flex justify-center">
+      <div class="relative">
 
-    .glow {
-      box-shadow: 0 0 15px red;
-    }
+        <!-- Glow Ring -->
+        <div class="absolute inset-0 rounded-full border-4 border-red-500 blur-sm"></div>
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 20px red;
-    }
-  </style>
-</head>
+        <img src="profile.jpeg"
+             class="w-72 h-72 rounded-full object-cover border-4 border-red-500 shadow-[0_0_60px_red]">
 
-<body class="text-white" style="background: url('banner.png') no-repeat center center/cover;">
-
-<!-- NAVBAR -->
-<nav class="flex justify-between items-center p-6 border-b border-red-500">
-  <h1 class="text-xl text-red-500 font-bold">Reetika.dev</h1>
-  <div class="space-x-6">
-    <a href="#skills" class="hover:text-red-500">Skills</a>
-    <a href="#projects" class="hover:text-red-500">Projects</a>
-    <a href="#contact" class="hover:text-red-500">Contact</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="h-screen flex flex-col justify-center items-center text-center px-6">
-   <img src="profile.jpeg" 
-       class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-red-500 shadow-lg">
-
-  <h1 class="text-5xl font-bold">
-    Hi, I'm <span class="text-red-500">Reetika Devi</span>
-  </h1>
-
-  <h2 class="text-2xl mt-4 text-gray-400">
-    <span id="typing"></span>
-  </h2>
-
-  <p class="mt-6 max-w-xl text-gray-500">
-    I specialize in vulnerability assessment, penetration testing, and real-world cybersecurity practices.
-    Passionate about identifying risks before attackers do.
-  </p>
-
-  <div class="mt-6 space-x-4">
-    <a href="#projects" class="bg-red-500 px-6 py-2 rounded glow">View Work</a>
-    <a href="#" class="border border-red-500 px-6 py-2 rounded">Download Resume</a>
-  </div>
-
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="p-12 bg-gray-950 text-center">
-
-  <h2 class="text-3xl font-bold text-red-500 mb-8">Skills</h2>
-
-  <div class="flex flex-wrap justify-center gap-4">
-    <span class="bg-black border border-red-500 px-4 py-2 rounded">Network Security</span>
-    <span class="bg-black border border-red-500 px-4 py-2 rounded">VAPT</span>
-    <span class="bg-black border border-red-500 px-4 py-2 rounded">Penetration Testing</span>
-    <span class="bg-black border border-red-500 px-4 py-2 rounded">Kali Linux</span>
-    <span class="bg-black border border-red-500 px-4 py-2 rounded">Wireshark</span>
-    <span class="bg-black border border-red-500 px-4 py-2 rounded">Report Writing</span>
-  </div>
-
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="p-12">
-
-  <h2 class="text-3xl font-bold text-center text-red-500 mb-10">Projects</h2>
-
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <div class="card bg-gray-900 p-6 rounded-xl transition duration-300">
-      <h3 class="text-xl font-bold text-red-500">Packet Sniffing</h3>
-      <p class="text-gray-400 mt-3">
-        Captured HTTP traffic using Wireshark and demonstrated how sensitive data can be intercepted.
-      </p>
+      </div>
     </div>
 
-    <div class="card bg-gray-900 p-6 rounded-xl transition duration-300">
-      <h3 class="text-xl font-bold text-red-500">Vulnerability Assessment</h3>
-      <p class="text-gray-400 mt-3">
-        Discovered system vulnerabilities and simulated exploitation to analyze risk impact.
-      </p>
-    </div>
+    <!-- RIGHT SIDE CONTENT -->
+    <div>
 
-    <div class="card bg-gray-900 p-6 rounded-xl transition duration-300">
-      <h3 class="text-xl font-bold text-red-500">Wireshark CTF</h3>
-      <p class="text-gray-400 mt-3">
-        Solved packet analysis challenges and extracted hidden flags from traffic.
-      </p>
-    </div>
+      <h1 class="text-5xl font-bold leading-tight">
+        Hi, I'm <span class="text-red-500 drop-shadow-[0_0_10px_red]">Reetika Devi</span>
+      </h1>
 
-    <div class="card bg-gray-900 p-6 rounded-xl transition duration-300">
-      <h3 class="text-xl font-bold text-red-500">Windows 7 Hacking</h3>
-      <p class="text-gray-400 mt-3">
-        Performed penetration testing on legacy systems and identified critical weaknesses.
-      </p>
-    </div>
+      <!-- TYPING EFFECT -->
+      <h2 class="text-2xl mt-4 text-gray-400">
+        <span id="typing"></span>
+      </h2>
 
-    <div class="card bg-gray-900 p-6 rounded-xl transition duration-300">
-      <h3 class="text-xl font-bold text-red-500">Credential Harvester</h3>
-      <p class="text-gray-400 mt-3">
-        Simulated phishing attacks using SET toolkit to demonstrate credential theft risks.
+      <p class="mt-6 text-gray-400 max-w-lg leading-relaxed">
+        I am a cybersecurity trainee with hands-on experience in vulnerability assessment,
+        penetration testing, and network security. My journey includes practical work like
+        packet sniffing using Wireshark, system exploitation, and solving CTF challenges.
+        I am continuously learning to identify and mitigate real-world security risks.
       </p>
+
+      <div class="mt-6 space-x-4">
+        <a href="#projects"
+           class="bg-red-500 px-6 py-2 rounded shadow-[0_0_20px_red] hover:bg-red-600">
+          View Work
+        </a>
+
+        <a href="#"
+           class="border border-red-500 px-6 py-2 rounded hover:bg-red-500 hover:text-white">
+          Download Resume
+        </a>
+      </div>
+
     </div>
 
   </div>
 
 </section>
-
-<!-- CONTACT -->
-<section id="contact" class="p-12 bg-gray-950 text-center">
-
-  <h2 class="text-3xl font-bold text-red-500 mb-6">Contact</h2>
-
-  <p class="text-gray-400">Let’s connect and build something secure 🔐</p>
-
-  <div class="mt-4 space-x-6">
-    <a href="#" class="hover:text-red-500">LinkedIn</a>
-    <a href="#" class="hover:text-red-500">GitHub</a>
-    <a href="mailto:youremail@gmail.com" class="hover:text-red-500">Email</a>
-  </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="text-center p-4 text-gray-600">
-  © 2026 Reetika Devi | Cybersecurity Portfolio
-</footer>
-
-<!-- TYPING EFFECT -->
-<script>
-  const text = ["Cybersecurity Enthusiast", "VAPT Learner", "Future Security Analyst"];
-  let i = 0;
-  let j = 0;
-  let currentText = "";
-  let isDeleting = false;
-
-  function type() {
-    currentText = text[i];
-    document.getElementById("typing").innerHTML = currentText.substring(0, j);
-
-    if (!isDeleting && j < currentText.length) {
-      j++;
-      setTimeout(type, 100);
-    } else if (isDeleting && j > 0) {
-      j--;
-      setTimeout(type, 50);
-    } else {
-      isDeleting = !isDeleting;
-      if (!isDeleting) i = (i + 1) % text.length;
-      setTimeout(type, 1000);
-    }
-  }
-
-  type();
-</script>
-
-</body>
-</html>
